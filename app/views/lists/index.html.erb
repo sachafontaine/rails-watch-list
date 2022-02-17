@@ -1,0 +1,13 @@
+<%= render "shared/banner" %>
+<div class="container text-center mt-2">
+  <div class="row">
+    <% @lists.each do |list| %>
+      <div class="col-md-4 mb-4">
+        <div class="card-list">
+            <h4><%= list.name %></h4>
+            <%= link_to "Voir la liste", list_path(list), class: "text-primary" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
