@@ -1,9 +1,0 @@
-<div class="container text-center mt-2">
-  <h1>Movies</h1>
-    <% @movies.each do |movie| %>
-    <ul class="list-group">
-    <li class="list-group-item"> <strong><%= movie.title %></strong> - <%= movie.overview %> </li>
-    <%= link_to "View details movie", movie_path(movie), class: "btn btn-primary" %>
-    </ul>
-    <% end %>
-</div>
