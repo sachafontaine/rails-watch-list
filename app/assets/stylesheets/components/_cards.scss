@@ -2,13 +2,24 @@
   background-size: cover;
   background-position: center;
   align-content: center;
-  color: $blue;
+  color: rgba(0, 0, 0, 0.753);
   font-size: 24px;
   font-weight: bold;
-  padding: 40px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.096);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.103);
+}
+
+.card-list:hover {
+  background-color: white;
+  transform: scale(1.03);
+  text-decoration: none;
+}
+
+.img-card-list {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
 }
 
 .cards {
@@ -17,8 +28,20 @@
   grid-gap: 16px;
 }
 
-.card-img {
-  width: 100%;
-  height: 300px;
-  background-size: cover;
+.card-list-movies {
+  align-content: center;
+  color: rgba(0, 0, 0, 0.753);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.096);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.103);
+  padding: 25px;
+  h4 {
+    font-weight: bold;
+  }
+}
+
+.card-list-movies:hover {
+  background-color: white;
+  transform: scale(1.03);
+  text-decoration: none;
 }

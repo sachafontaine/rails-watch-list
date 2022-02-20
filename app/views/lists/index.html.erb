@@ -3,10 +3,12 @@
   <div class="row">
     <% @lists.each do |list| %>
       <div class="col-md-4 mb-4">
-        <div class="card-list">
+      <%= link_to list_path(list) do %>
+        <div class="card-list pb-3">
+            <%= cl_image_tag list.photo.key, class: "img-card-list mb-3" %>
             <h4><%= list.name %></h4>
-            <%= link_to "Voir la liste", list_path(list), class: "text-primary" %>
         </div>
+      <% end %>
       </div>
     <% end %>
   </div>
